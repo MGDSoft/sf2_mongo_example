@@ -1,0 +1,6 @@
+services:
+    example.locale_listener:
+        class: MGD\ExampleBundle\Listener\LocaleListener
+        arguments: [%locale%]
+        tags:
+            -  { name: kernel.event_subscriber }

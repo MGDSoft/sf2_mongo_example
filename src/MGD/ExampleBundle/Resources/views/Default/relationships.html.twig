@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    {% if student %}
+
+        See relationships on Student
+
+        {{ student|ld }}
+        {{ books|ld }}
+        {{ teachers|ld }}
+
+    {% else %}
+        You need execute php app/console doctrine:mongodb:fixtures:load
+    {% endif %}
+
+{% endblock %}

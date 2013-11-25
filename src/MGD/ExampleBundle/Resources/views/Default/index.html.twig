@@ -1,0 +1,14 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    {% if student %}
+
+        See translations on Student
+
+        {{ student|ld }}
+        {{ translations|ld }}
+
+    {% else %}
+        You need execute php app/console doctrine:mongodb:fixtures:load
+    {% endif %}
+
+{% endblock %}

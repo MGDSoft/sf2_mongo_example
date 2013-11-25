@@ -1,0 +1,5 @@
+mgd_example:
+    resource: "@MGDExampleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
